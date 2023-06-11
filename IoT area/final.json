@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "프로젝트id",
+  "private_key_id": "keykey",
+  "private_key": "keykey"
+  "client_email": "fire베이스 주소",
+  "client_id": "아이디",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "x509 url",
+  "client_x509_cert_url": "파이어베이스 주소 및 pki기반 공개키 인증"
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_reg"
+    tools:layout_editor_absoluteX="13dp"
+    tools:layout_editor_absoluteY="-1dp">
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="69dp"
+        android:text="초기화면"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Phone" />
+
+    <Button
+        android:id="@+id/btn_Reg_Complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="69dp"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Reg_NickName" />
+
+    <EditText
+        android:id="@+id/txt_Reg_Id"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_Reg_Id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_Reg_Id"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="49dp"
+        android:gravity="center"
+        android:text="아이디"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_title" />
+
+    <TextView
+        android:id="@+id/lbl_Reg_Password_Info"
+        android:layout_width="337dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="44dp"
+        android:text="비밀번호는 5~15자 영문 대 소문자, 숫자, 특수문자 사용"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_Reg_Phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Reg_Password_Check" />
+
+    <EditText
+        android:id="@+id/txt_Reg_Password"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_Reg_Password"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Id_Info" />
+
+    <TextView
+        android:id="@+id/lbl_Reg_Password"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="비밀번호"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Id_Info" />
+
+    <TextView
+        android:id="@+id/lbl_Reg_Password_Check"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="비밀번호 확인"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Password" />
+
+    <EditText
+        android:id="@+id/txt_Reg_Password_Check"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_Reg_Password_Check"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Reg_Password" />
+
+    <TextView
+        android:id="@+id/lbl_Reg_Phone"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="연락처"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Password_Info" />
+
+    <EditText
+        android:id="@+id/txt_Reg_NickName"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_Reg_Phone"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Password_Info" />
+
+    <TextView
+        android:id="@+id/lbl_Reg_Id_Info"
+        android:layout_width="350dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="52dp"
+        android:text="아이디는 5~15자의 소문자와 숫자 특수기호는(-),(_)만 사용"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_Reg_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Reg_Id_Check" />
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입 화면"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/jcb_Reg_Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="166dp"
+        android:editable="false"
+        android:text="ID확인여부"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Reg_Id_Check"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Reg_Id" />
+
+    <Button
+        android:id="@+id/btn_Reg_Id_Check"
+        android:layout_width="88dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="11dp"
+        android:text="ID확인"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_Reg_Id_Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_Reg_Id"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
