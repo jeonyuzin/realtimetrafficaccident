@@ -24,6 +24,7 @@ IoT영역에서 초기 사고 감지를 한 후 연동된 시스템에 데이터
 -MQTT(데이터 통신)
 
 시스템 구조도
+
 <img src="https://github.com/jeonyuzin/realtimetrafficaccident/blob/main/readimg/structure.png">
 
 스마트폰(사용자 : 소방관,경찰분들이 현장을 파악 하고 처리하는 영역)
