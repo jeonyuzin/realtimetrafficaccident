@@ -1,4 +1,4 @@
-# 실시간 교통사고 알리미
+# 골든타임을 위한 실시간 교통사고 알리미
 
 
 <img src="https://github.com/jeonyuzin/realtimetrafficaccident/blob/main/readimg/pre.png">
